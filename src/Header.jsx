@@ -48,7 +48,7 @@ function Header(){
   
   useEffect(() => {
     try {
-      fetch(`http://api.weatherapi.com/v1/current.json?key=042ca2d4adbf47b08a153518221705&q=India&aqi=no`)
+      fetch(`https://api.weatherapi.com/v1/current.json?key=042ca2d4adbf47b08a153518221705&q=India&aqi=no`)
    .then((response) => response.json()).then((daata)=>{
        setData(daata);
    }).catch((error)=>{
